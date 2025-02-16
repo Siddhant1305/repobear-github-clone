@@ -6,6 +6,7 @@ const { addRepo } = require("./controllers/add.js");
 const { pullRepo } = require("./controllers/pull.js");
 const { pushRepo } = require("./controllers/push.js");
 const { commitRepo } = require("./controllers/commit.js");
+const { revertRepo } = require("./controllers/revert.js");
 
 yargs(hideBin(process.argv))
 //   .command("start", "Starts a new server", {}, startServer)
