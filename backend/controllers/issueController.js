@@ -14,6 +14,14 @@ const getAllIssues = (req, res) => {
     res.send("All Issues fetched!");
 };
 
-const getIssueById= (req, res) => {
+const getIssueById = (req, res) => {
     res.send("Issues details fetched!");
+};
+
+module.exports = {
+    createIssue,
+    updateIssueById,
+    deleteIssueById,
+    getAllIssues,
+    getIssueById,
 };
