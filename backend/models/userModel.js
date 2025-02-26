@@ -1,44 +1,42 @@
-const mongoose = require('mongoose');
-const { required } = require('yargs');
+const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const UserSchema = new Schema({
-    username: {
-        type: String,
-        required: true,
-        unique: true,
+  username: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+  },
+  repositories: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Repository",
     },
-    email: {
-        type: String,
-        required: true,
-        unique: true,
+  ],
+  followedUsers: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "User",
     },
-    password: {
-        type: String, 
+  ],
+  starRepos: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Repository",
     },
-    repositories: [
-        {
-            default: [],
-            type: Schema.Types.ObjectId,
-            ref: "Repository",
-        },
-    ],
-    followedUsers: [
-        {
-            default: [],
-            type: Schema.Types.ObjectId,
-            ref: "User",
-        },
-    ],
-    starRepos: [
-        {
-            default: [],
-            type: Schema.Types.ObjectId,
-            ref: "Repository",
-        },
-    ],
+  ],
+}, {
+  timestamps: true,
 });
 
 const User = mongoose.model("User", UserSchema);
 
-export default User;
+module.exports = User;

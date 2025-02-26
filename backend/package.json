@@ -19,7 +19,7 @@
     "http": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.13.0",
-    "mongoose": "^8.10.1",
+    "mongoose": "^8.10.2",
     "socket.io": "^4.8.1",
     "uuid": "^11.0.5",
     "yargs": "^17.7.2"
