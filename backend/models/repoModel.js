@@ -3,35 +3,36 @@ const { Schema } = mongoose;
 
 const RepositorySchema = new Schema({
     name: {
-      type: String,
-      required: true,
-      unique: true,
+        type: String,
+        required: true,
+        unique: true,
     },
     description: {
-      type: String,
+        type: String,
     },
     content: [
-      {
-        type: String,
-      },
+        {
+            type: String,
+        },
     ],
     visibility: {
-      type: Boolean,
+        type: Boolean,
     },
     owner: {
-      type: Schema.Types.ObjectId,
-      ref: 'User',
-      required: true,
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        required: true,
     },
     issues: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Issue',
-      },
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Issue',
+        },
     ],
   }, {
     timestamps: true, // Correct use
-  });
+});
 
 const Repository = mongoose.model("Repository", RepositorySchema);
+
 module.exports = Repository;

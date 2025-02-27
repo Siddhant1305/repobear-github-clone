@@ -39,19 +39,68 @@ async function createRepository(req, res) {
 
 // Get All Repository
 async function getAllRepositories(req, res) {
-    res.send("All Repo fetched!");
+
+    try {
+      const repositories = await Repository.find({})
+        .populate("owner")
+        .populate("issues");
+  
+      res.json(repositories);
+    } catch (err) {
+      console.error("Error during fetching repositories : ", err.message);
+      res.status(500).send("Server error");
+    }
 };
 
-const fetchRepositoryById = (req, res) => {
-    res.send("Repo details fetched!");
+// Fetch Repo by ID
+async function fetchRepositoryById(req, res) {
+    const { id } = req.params;
+
+    try {
+      const repository = await Repository.find({ _id: id })
+        .populate("owner")
+        .populate("issues");
+  
+      res.json(repository);
+    } catch (err) {
+      console.error("Error during fetching repository : ", err.message);
+      res.status(500).send("Server error");
+    }
 };
 
-const fetchRepositoryByName = (req, res) => {
-    res.send("Repo details fetched!");
+// Fetch Repo by Name
+async function fetchRepositoryByName(req, res) {
+    const { name } = req.params;
+
+    try {
+      const repository = await Repository.find({ name })
+        .populate("owner")
+        .populate("issues");
+  
+      res.json(repository);
+    } catch (err) {
+      console.error("Error during fetching repository : ", err.message);
+      res.status(500).send("Server error");
+    }
 };
 
-const fetchRepositoriesForCurrentUser = (req, res) => {
-    res.send("Repos for logged in user fetched!");
+// Fetch Repos for Current User
+async function fetchRepositoriesForCurrentUser(req, res) {
+    console.log(req.params);
+    const { userID } = req.params;
+    
+    try {
+      const repositories = await Repository.find({ owner: userID });
+  
+      if (!repositories || repositories.length == 0) {
+        return res.status(404).json({ error: "User Repositories not found!" });
+      }
+      console.log(repositories);
+      res.json({ message: "Repositories found!", repositories });
+    } catch (err) {
+      console.error("Error during fetching user repositories : ", err.message);
+      res.status(500).send("Server error");
+    }
 };
 
 const updateRepositoryById = (req, res) => {
