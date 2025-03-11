@@ -1,0 +1,54 @@
+# **🐻 RepoBear - GitHub Clone**
+
+**🚀 Overview:**
+RepoBear is a full-stack GitHub clone that enables users to host, manage, and collaborate on repositories efficiently. The platform provides seamless version control, issue tracking, and code review functionalities, mirroring the core features of GitHub.
+
+**✨ Features:**
+
+**•	User Authentication:** Secure login and signup with JWT.
+
+**•	Repository Management:** Create, update, and delete repositories.
+
+**•	Branching & Commits:** Manage branches, push commits, and view commit history.
+
+**•	Issue Tracking:** Open, close, and manage issues for better collaboration.
+
+**•	Pull Requests:** Submit and review code changes before merging.
+
+**•	Code Review:** Add inline comments and discussions on code changes.
+
+**•	Star & Fork Repositories:** Users can star repositories and fork them for modifications.
+
+**•	Search Functionality:** Find repositories, users, and issues efficiently.
+
+**•	Mobile-Responsive Design:** Works smoothly across devices.
+
+**🛠️ Tech Stack:**
+
+**•	Frontend:** React.js, HTML, CSS, JavaScript
+
+**•	Backend:** Node.js, Express.js
+
+**•	Database:** MongoDB
+
+**•	Authentication:** JWT (JSON Web Tokens)
+
+**•	Storage:** AWS S3 for storing repository files
+
+**•	Version Control:** Git-based operations for managing repositories
+
+**•	State Management:** Redux for efficient state handling
+
+**•	Styling:** CSS / Material UI
+
+**🔥 Future Enhancements:**
+
+**•	CI/CD Integration:** Automate deployments with GitHub Actions.
+
+**•	Gist Support:** Enable users to create and manage code snippets.
+
+**•	Code Diff & Blame View:** Enhance code collaboration features.
+
+**•	Webhooks & API Access:** Extend RepoBear’s capabilities for automation.
+
+**•	Dark Mode UI:** Improve user experience with theme options.
