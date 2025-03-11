@@ -1,4 +1,4 @@
-# **🐻 RepoBear - GitHub Clone**
+![repobear1](https://github.com/user-attachments/assets/f2a73152-7f3b-4257-89a3-f2dc727770ad)# **🐻 RepoBear - GitHub Clone**
 
 **🚀 Overview:**
 RepoBear is a full-stack GitHub clone that enables users to host, manage, and collaborate on repositories efficiently. The platform provides seamless version control, issue tracking, and code review functionalities, mirroring the core features of GitHub.
@@ -52,3 +52,5 @@ RepoBear is a full-stack GitHub clone that enables users to host, manage, and co
 **•	Webhooks & API Access:** Extend RepoBear’s capabilities for automation.
 
 **•	Dark Mode UI:** Improve user experience with theme options.
+
+![repobear1](https://github.com/user-attachments/assets/08b78786-60a6-4cc1-b67f-eb9a6ec2bfc7)
