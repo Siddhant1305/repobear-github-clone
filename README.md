@@ -33,7 +33,7 @@ RepoBear is a full-stack GitHub clone that enables users to host, manage, and co
 
 **•	Authentication:** JWT (JSON Web Tokens)
 
-**•	Storage:** AWS S3 for storing repository files
+**•	Storage:** AWS S3 for storing repository files, IAM
 
 **•	Version Control:** Git-based operations for managing repositories
 
