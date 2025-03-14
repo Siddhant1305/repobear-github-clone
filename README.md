@@ -54,4 +54,6 @@ RepoBear is a full-stack GitHub clone that enables users to host, manage, and co
 
 **•	Dark Mode UI:** Improve user experience with theme options.
 
+**•	Star Mark Feature:** Adding Star Mark Feature to mark important Repository.
+
 ![repobear1](https://github.com/user-attachments/assets/f2a73152-7f3b-4257-89a3-f2dc727770ad)
