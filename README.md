@@ -36,7 +36,7 @@ RepoBear is a full-stack GitHub clone that enables users to host, manage, and co
 
 **•	Storage:** AWS S3 for storing repository files, IAM
 
-**•	Version Control:** Git-based operations for managing repositories
+**•	Version Control:** Git-based operations for managing repositories.
 
 **•	State Management:** Redux for efficient state handling
 
