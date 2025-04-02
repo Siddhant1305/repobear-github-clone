@@ -38,9 +38,9 @@ RepoBear is a full-stack GitHub clone that enables users to host, manage, and co
 
 **•	Version Control:** Git-based operations for managing repositories.
 
-**•	State Management:** Redux for efficient state handling
+**•	State Management:** Redux for efficient state handling.
 
-**•	Styling:** CSS / Material UI
+**•	Styling:** CSS / Material UI.
 
 # **🔥 _Future Enhancements:_**
 
