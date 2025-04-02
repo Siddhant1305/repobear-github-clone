@@ -26,7 +26,7 @@ RepoBear is a full-stack GitHub clone that enables users to host, manage, and co
 
 # **🛠️ _Tech Stack:_**
 
-**•	Frontend:** React.js, HTML, CSS, JavaScript
+**•	Frontend:** React.js, HTML, CSS, JavaScript(JS)
 
 **•	Backend:** Node.js, Express.js
 
