@@ -2,7 +2,7 @@
 
 # **🚀 _Overview:_**
 
-RepoBear is a full-stack GitHub clone that enables users to host, manage, and collaborate on repositories efficiently. The platform provides seamless version control, issue tracking, and code review functionalities, mirroring GitHub's core features.
+RepoBear is a full-stack GitHub clone enabling users to efficiently host, manage, and collaborate on repositories. The platform provides seamless version control, issue tracking, and code review functionalities, mirroring GitHub's core features.
 
 # **✨ _Features:_**
 
