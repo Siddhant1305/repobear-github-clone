@@ -40,7 +40,7 @@ RepoBear is a full-stack GitHub clone enabling users to efficiently host, manage
 
 **•	State Management:** Redux for efficient state handling.
 
-**•	Styling:** CSS / Material UI.
+**•	Styling:** CSS / Material UI
 
 # **🔥 _Future Enhancements:_**
 
